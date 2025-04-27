@@ -66,17 +66,16 @@ Write a C program to print the given triangular pattern using loop.
 
 ## PROGRAM:
 ```
-#include <stdio.h>
-
-int main() {
-    int n;
-    scanf("%d", &n);
-for (int i = 0; i < n; i++) {
-        for (int j = 0; j < n - i - 1; j++) {
-            printf(" ");
-        }
-        for (int j = 0; j < 2 * i + 1; j++) {
-            printf("A");
+#include<stdio.h>
+int main()
+{
+    int i,j,n;
+    scanf("%d",&n);
+    for(i=n;i>=1;i--)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("$");
         }
         printf("\n");
     }
@@ -86,9 +85,9 @@ for (int i = 0; i < n; i++) {
 ```
 
 ## OUTPUT:
-![Screenshot (252)](https://github.com/user-attachments/assets/e2619ab7-17cc-4244-8269-25f2f52aaf9b)
 
 
+![Screenshot (272)](https://github.com/user-attachments/assets/603e3cad-1cdf-4af6-a74e-458f4283deef)
 
 
 
@@ -171,26 +170,23 @@ Write a c program to find the sum of odd digits using for loop
 #include<stdio.h>
 int main()
 {
-    int m,n;
-    scanf("%d%d",&m,&n);
-    for(int i=1;i<=m;i++)
+    int a,b,sum=0,i;
+    scanf("%d%d",&a,&b);
+    for(i=a;i<=b;i++)
     {
-        for(int j=1;j<=n;j++)
+        if(i%2!=0)
         {
-            if(i%2==1)
-               printf("0");
-            else
-              printf("1");
+            sum += i;
         }
-        printf("\n");
     }
+    printf("%d",sum);
     return 0;
 }
 ```
 
 ## OUTPUT:
+![Screenshot (274)](https://github.com/user-attachments/assets/84500f59-5301-4c5b-87aa-ad7608a50a8a)
 
-![Screenshot (256)](https://github.com/user-attachments/assets/e4457baf-52aa-4108-8d0d-c9f2eb0deb40)
 
 
 
